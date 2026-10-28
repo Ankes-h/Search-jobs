@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Agent Guidelines: AI Job Search
@@ -17,3 +17,7 @@ To prevent duplication and configuration drift across different AI agent framewo
    - Do not duplicate these rules or specifications. Treat `.claude/` files as the single source of truth.
 3. **Portal Search Skills:**
    - Job-portal search CLIs live under [.agents/skills/](.agents/skills/) in the portable Agent Skills format (with a `SKILL.md` per portal). Codex and Antigravity discover these automatically; the `/scrape` workflow in [.claude/skills/job-scraper/](.claude/skills/job-scraper/) orchestrates them.
+4. **Google Antigravity Integration:**
+   - Workspace rules are loaded via [GEMINI.md](GEMINI.md).
+   - Core skills are mounted via [.agents/skills.json](.agents/skills.json) referencing `.claude/skills`.
+   - Subagents (`posting-fetcher`, `posting-scorer`, `application-reviewer`) follow the read-only security boundaries and specifications in `.claude/agents/`.

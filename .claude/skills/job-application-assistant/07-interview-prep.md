@@ -1,10 +1,8 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Interview Preparation Guide
-
-<!-- SETUP: STAR examples are personalized by running /setup based on your actual experience -->
 
 ## STAR Format
 
@@ -14,100 +12,55 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+### 1. NLP Sentiment & Review Pipeline (Applied AI / Python)
+**S:** Completed Cisco's "Apply AI: Analyze Customer Reviews" certification requiring extraction of actionable customer sentiment and themes from unstructured reviews.
+**T:** Build an automated pipeline to clean raw feedback, classify sentiment, and surface recurring pain points accurately.
+**A:** Implemented Python-based NLP workflow utilizing tokenization, sentiment scoring, and prompt-engineered categorization rubrics to filter noise and cluster customer feedback.
+**R:** Produced a repeatable evaluation workflow that classified customer sentiment with high precision and summarized key product friction areas in structured JSON reports.
+**Use for:** "Tell me about a project where you applied AI/ML to unstructured data.", "How do you evaluate and clean text data for ML pipelines?"
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Prompt Engineering & Defense Testbed (Generative AI / Security)
+**S:** AI applications often suffer from prompt drift, hallucination, and vulnerability to prompt injection attacks when handling untrusted user input.
+**T:** Design and test prompt templates that strictly adhere to system instructions and resist adversarial text.
+**A:** Experimented with delimiter boundaries, few-shot conditioning, structured schema enforcement (JSON output), and defensive pre-filtering gates modeled after Anthropic AI fluency guidelines.
+**R:** Successfully built robust prompt architectures that maintained strict behavioral compliance and rejected adversarial instructions without degrading helpfulness.
+**Use for:** "What is your approach to prompt engineering?", "How do you ensure AI agent outputs are safe and reliable?"
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Technical Content Writing & Knowledge Synthesis (Communication / Research)
+**S:** Emerging AI architectures and agentic paradigms evolve rapidly, often leaving developers confused by abstract documentation.
+**T:** Synthesize complex technical concepts into accessible, actionable guides published on Medium and ResearchGate.
+**A:** Conducted hands-on experiments with modern LLMs and developer tooling, broke down workflows into clear step-by-step architectures, and created visual posters and diagrams.
+**R:** Published well-received articles establishing domain engagement, receiving positive feedback from developer peers for technical clarity.
+**Use for:** "How do you explain complex technical concepts to others?", "Tell me about a time you took initiative to learn something new."
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
-
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### 4. Multi-Agent Framework Adaptation (Google Antigravity / Engineering)
+**S:** An open-source job application automation framework was coupled solely to Claude Code and failed to execute cleanly on Windows or with Google Antigravity.
+**T:** Reverse engineer the system architecture using REA, fix platform-specific import collisions, and create native Antigravity workspace integration.
+**A:** Analyzed the codebase, added `tools/__init__.py`, created `.agents/skills.json` and `GEMINI.md`, and mapped subagents (`posting-fetcher`, `posting-scorer`, `application-reviewer`) without breaking any existing test guards.
+**R:** Achieved 100% test pass rate across 837 tests, enabling Antigravity users to seamlessly orchestrate multi-agent scraping and tailoring workflows.
+**Use for:** "Tell me about a time you debugged and adapted an existing codebase.", "How do you work with multi-agent systems?"
 
 ## Common Tough Questions
 
-### "Why did you leave [previous company]?"
-> [PREPARE YOUR ANSWER - be honest, forward-looking, no negativity about former employer]
+### "You are in the first year of college. How will you manage an internship alongside studies?"
+> "My coursework in CSE (AIML) at Chitkara University gives me a strong theoretical foundation in algorithms, mathematics, and programming. I dedicate consistent evening and weekend blocks to hands-on development and writing. For this role, I have organized my schedule to ensure high-priority focus on project deliverables, whether in a remote or structured part-time/internship arrangement."
 
-### "You don't have [specific skill/experience]."
-> [PREPARE YOUR ANSWER - acknowledge the gap, bridge to adjacent experience, show willingness to learn]
+### "You don't have multi-year enterprise experience."
+> "I acknowledge that I am early in my career, but I bring high learning velocity, modern fluency in generative AI tooling (Antigravity, Claude Code, Python, prompt engineering), and a proactive track record of completing industry certifications and publishing technical research. I learn fast and adapt immediately to team conventions."
 
-### "Where do you see yourself in 5 years?"
-> [PREPARE YOUR ANSWER - show ambition aligned with the role's growth path]
+### "Where do you see yourself in 3-5 years?"
+> "I aim to grow into an accomplished AI/ML engineer who designs, tests, and deploys intelligent autonomous agent systems and production-scale machine learning workflows, while continuing to contribute to the open-source community."
 
-### "What's your biggest weakness?"
-> [PREPARE YOUR ANSWER - genuine weakness with concrete mitigation strategy]
-
-### "Why this company specifically?"
-> Customize per company. Must reference: specific projects, company values, market position, or team structure. Never give a generic answer.
+### "What is your biggest weakness?"
+> "Because the AI field moves so quickly, I initially tried to learn every new framework at once. I've learned to focus my energy systematically—mastering core fundamentals in Python, prompt engineering, and core ML architectures before branching into peripheral tools."
 
 ## Questions You Should Ask Interviewers
 
 ### About the Role
-- "What does a typical week look like in this role?"
-- "What would success look like in the first 6 months?"
-- "What's the biggest challenge the team is facing right now?"
+- "What does success look like for an intern/junior developer in the first 3 months?"
+- "What kinds of real-world AI or automation problems will I be tackling directly?"
+- "What tech stack and AI models does the team currently deploy?"
 
-### About the Team
-- "How big is the team, and how do you divide work?"
-- "What does the development/project lifecycle look like, from idea to production?"
-- "How do you onboard new team members?"
-
-### About Tech & Growth
-- "What's your current tech stack for [relevant area]?"
-- "Is there room to grow into more architectural or strategic decisions?"
-- "How does the team stay current with new tools and methods?"
-
-### About Culture (use these to prevent disappointment)
-- "How would you describe the team culture?"
-- "What does professional development look like here?"
-- "Is there flexibility for remote/hybrid work?"
-- "What's the balance between development/new projects and maintenance work?"
-- "How would you describe the leadership style in this team?"
-- "What do people who thrive here have in common?"
-
-## Phone/Video Interview Tips
-- Have STAR examples written out (use this file)
-- Keep a glass of water nearby
-- Smile when speaking (it changes your tone)
-- Ask for clarification if a question is vague
-- It's OK to take 5 seconds to think before answering
-- End with: "Is there anything else you'd like to know about my background?"
-
-## After the Application (Best Practice)
-
-### Follow-Up Etiquette
-- **Don't call to "stand out"** or to learn more about the role post-submission - this risks a negative impression
-- If the employer specified a timeline, respect it and wait
-- If no timeline was given and significant time has passed (2+ weeks), a brief call to ask about status is acceptable
-- If you have genuinely new, relevant information to share, a short follow-up is fine
-
-### Thank-You Notes
-- When you receive any update (interview invitation, rejection, or status update), send a brief thank-you message
-- Express appreciation for their time and the process
-- Keep it short (2-3 sentences)
-
-## Roleplay Guidelines
-When the user asks for interview practice:
-1. Ask which role/company to simulate
-2. Start with easy warm-up questions ("Tell me about yourself")
-3. Progress to role-specific technical questions
-4. Include 1-2 behavioral questions using the competencies from the job posting
-5. End with a tough question or curveball
-6. After each answer, give brief feedback: what worked, what to sharpen
-7. Suggest which STAR example would work best for each question
+### About the Team & Mentorship
+- "How does the team approach code reviews and mentoring junior developers?"
+- "How do you onboard new team members into your development workflow?"

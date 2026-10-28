@@ -16,7 +16,7 @@ Follow these steps **in order**.
 - A focus area (e.g. `/rank data science`) → rank only jobs whose title or stored fit-notes match the focus
 - `--all` → re-rank every job that has not been applied to, including previously ranked ones (useful after the profile changes)
 - `--limit <N>` → maximum number of jobs to score this run (default 10)
-- `--top <N>` → shortlist size (default 5)
+- `--top <N>` → shortlist size (default 10, showing at least 10 jobs at once)
 
 `--limit` bounds the expensive fetch-and-score work; `--top` only bounds how many scored jobs appear in the shortlist. They are independent: jobs beyond `--limit` are deferred, not silently discarded.
 

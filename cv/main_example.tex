@@ -1,8 +1,7 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Ankesh Singh
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -11,11 +10,6 @@
 \moderncvcolor{blue}
 
 % Force the name and section headings to render in moderncv blue (color1).
-% Default banking leaves them black: moderncvstylebanking.sty's \colorlet
-% copies (not aliases) the pre-scheme accent colour, so the name colours are
-% frozen before \moderncvcolor runs. Re-let them after. \namefont is the hook
-% every name-style macro routes through, so this also works on moderncv 2.3.1
-% (Debian/Ubuntu apt), which has no \firstnamestyle/\lastnamestyle at all.
 \renewcommand*{\namefont}{\fontsize{34}{36}\bfseries\upshape}
 \colorlet{firstnamecolor}{color1}
 \colorlet{lastnamecolor}{color1}
@@ -23,40 +17,24 @@
 \renewcommand*{\sectionstyle}[1]{{\sectionfont\color{color1}#1}}
 
 \usepackage[utf8]{inputenc}
-% pdflatex fallback only (the documented engine is lualatex, which skips this
-% branch). Without T1 font encoding pdflatex builds accented letters with
-% \accent, and the PDF text layer stores them decomposed - `e` + U+0300 rather
-% than U+00E8 - so an ATS keyword match on "Genève" fails while the page looks
-% right. moderncv 2.5 loads T1 itself under pdflatex; 2.3.1 (Debian/Ubuntu apt)
-% does not. \ifpdftex comes from iftex, which every moderncv version loads.
 \ifpdftex\usepackage[T1]{fontenc}\fi
-% moderncv loads hyperref itself in an \AtEndPreamble hook, so \hypersetup
-% must go in an \AtEndPreamble of our own: on moderncv < 2.4 a top-level
-% \usepackage{hyperref} clashes with the class's own
-% \RequirePackage[unicode]{hyperref}. From 2.4.0 the class passes its options
-% through \PassOptionsToPackage instead, which is what removes that clash.
 \AtEndPreamble{\hypersetup{
     colorlinks=true,
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
-    % Keep pdfpagemode=UseNone: this block runs after moderncv's own
-    % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
-    % value here would win and open every CV in fullscreen presentation mode.
+    pdftitle={Ankesh Singh - CV},
     pdfpagemode=UseNone,
 }}
 \usepackage[scale=0.80]{geometry}
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
-% If you have no address to list, DELETE this whole line. \address{}{}{} fails
-% with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\name{Ankesh}{Singh}
+\address{Uttar Pradesh, India}{}{}
+\phone[mobile]{+91 XXXXXXXXXX}
+\email{your.email@example.com}
+\extrainfo{\href{https://www.linkedin.com/in/ankesh-singh-9898503a6/}{LinkedIn}, \href{https://github.com/ankesh2008}{GitHub}, \href{https://medium.com/@ankeshs267}{Medium}}
 
 \begin{document}
 
@@ -67,7 +45,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Computer Science undergraduate specializing in Artificial Intelligence and Machine Learning at Chitkara University. Hands-on experience in prompt engineering, agentic AI workflows, and practical Python development, complemented by technical research blogging on Medium. Certified by Anthropic, Cisco, and HP in AI fluency and data analysis. Seeking an AI/ML or Prompt Engineering internship to apply generative AI paradigms and build robust software systems.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,53 +55,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Artificial Intelligence \& Prompt Engineering}: Prompt engineering patterns, few-shot prompting, system prompt design, anti-injection guardrails, agent orchestration.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Programming Languages}: Python, JavaScript, C, Java, HTML/CSS.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{Frameworks \& Web Development}: React, asynchronous web APIs, component architectures, UI integration.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Developer Tooling \& Environments}: Google Antigravity, VS Code, Git, GitHub, Linux/Bash.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
-
-\end{itemize}
-
-% ============================================================
-%     PROFESSIONAL EXPERIENCE
-% ============================================================
-
-\section{Professional Experience}
-\vspace{3pt}
-\begin{itemize}
-
-% --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-\end{itemize}}}
+\item \textbf{Domain \& Technical Writing}: Generative AI architectures, technical blogging, educational documentation, cybersecurity fundamentals, visual poster design.
 
 \end{itemize}
 
@@ -135,16 +75,69 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
+\item{\cventry{2025-2029}{B.Tech in Computer Science and Engineering (AIML)}{Chitkara University}{Patiala, India}{}{\vspace{1pt}
+In progress, expected 2029. Focus: Artificial Intelligence, Machine Learning, Python, Prompt Engineering, Agentic AI, Data Structures and Algorithms.
 }}
 
 \vspace{3pt}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2024-2025}{Senior Secondary School (12th Grade, PCM)}{Lucknow Public School}{Uttar Pradesh, India}{}{\vspace{1pt}
+Physics, Chemistry, Mathematics. Score: 77\%.
 }}
 
+\vspace{3pt}
+
+\item{\cventry{2022-2023}{Secondary School (10th Grade)}{Lucknow Public School}{Uttar Pradesh, India}{}{\vspace{1pt}
+Core Academic Curriculum. Score: 92\%.
+}}
+
+\end{itemize}
+
+% ============================================================
+%     PROJECTS & EXPERIENCE
+% ============================================================
+
+\section{Projects \& Experience}
+\vspace{3pt}
+\begin{itemize}
+
+\item{\cventry{2024-Present}{AI \& Technical Content Creator}{Medium \& ResearchGate}{Remote}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Authored in-depth technical articles analyzing emerging generative AI architectures, prompt design patterns, and agentic workflows on Medium (\href{https://medium.com/@ankeshs267}{@ankeshs267}).}
+    \item {Synthesized complex machine learning and LLM capabilities into clear, structured developer tutorials and visual guides.}
+    \item {Maintained technical profiles on ResearchGate and developer communities to share insights on applied artificial intelligence.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2025-Present}{AI Job Search Framework Adaptation}{Open Source Project}{Independent}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Reverse engineered multi-agent job search framework using REA and adapted core orchestration for Google Antigravity.}
+    \item {Engineered unified skill discovery via JSON manifests and resolved platform-specific module collisions on Windows.}
+    \item {Configured deterministic security gates and prompt injection sanitizers for processing untrusted job listings.}
+\end{itemize}}}
+
+\vspace{3pt}
+
+\item{\cventry{2026}{Customer Review Sentiment Analysis Pipeline}{Cisco Applied AI Project}{Independent}{}{\vspace{1pt}
+\begin{itemize}
+    \item {Built an automated NLP workflow to clean, classify, and extract sentiment categories from customer feedback.}
+    \item {Applied prompt-engineered categorization rubrics to detect product friction themes and generate structured summary reports.}
+\end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     CERTIFICATIONS
+% ============================================================
+
+\section{Certifications}
+\vspace{1pt}
+\begin{itemize}
+\item{\textbf{AI Fluency for Students} -- Anthropic.}
+\item{\textbf{Apply AI: Analyze Customer Reviews} -- Cisco (2026).}
+\item{\textbf{AI for Beginners} -- HP (2025).}
+\item{\textbf{Fundamentals of Cybersecurity} -- upGrad (2024).}
 \end{itemize}
 
 % ============================================================
@@ -154,27 +147,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item{Hindi (native), English (fluent / professional working proficiency).}
 \end{itemize}
 
 % ============================================================

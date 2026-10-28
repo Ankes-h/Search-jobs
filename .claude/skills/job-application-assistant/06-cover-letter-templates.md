@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.2
+framework_version: 1.0.3
 ---
 
 # Cover Letter Templates and Tailoring Guide
@@ -30,15 +30,7 @@ After writing the cover letter and before presenting to the user, always compile
 
 ### Known template pitfall: itemize inside `\lettercontent{}`
 
-The `\lettercontent{}` macro appends `\\` to its argument. This breaks when the argument ends in `\end{itemize}` because `\\` has no line to break after the environment closes, producing `! LaTeX Error: There's no line here to end.` and no PDF output.
-
-**Wrong (breaks compile):**
-```latex
-\lettercontent{Here is how my experience maps:
-\begin{itemize}
-    \item ...
-\end{itemize}}
-```
+The `\lettercontent{}` macro appends `\\` to its argument. This breaks when the argument ends in `\end{itemize}`.
 
 **Correct — close `\lettercontent{}` before the list and wrap the list in the matching Raleway-Medium font so typography stays consistent:**
 ```latex
@@ -52,8 +44,6 @@ The `\lettercontent{}` macro appends `\\` to its argument. This breaks when the 
 
 \lettercontent{[next paragraph]}
 ```
-
-The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\lettercontent{}` without the `\fontspec` block, bullets render in the default body font (Lato) and visually mismatch the rest of the letter.
 
 ## Document Structure
 
@@ -76,7 +66,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     TITLE NAME
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{}{\Huge{[YOUR_NAME]}}{  \href{mailto:[YOUR_EMAIL]}{[YOUR_EMAIL]} | [YOUR_PHONE] |  \urlstyle{same}\href{[YOUR_LINKEDIN_URL]}{LinkedIn}
+\namesection{}{\Huge{Ankesh Singh}}{  \href{mailto:your.email@example.com}{your.email@example.com} | +91 XXXXXXXXXX |  \urlstyle{same}\href{https://www.linkedin.com/in/yourprofile}{LinkedIn}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,11 +94,9 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 \lettercontent{I look forward to hearing from you.}
 
 \begin{flushright}
-% No trailing \\ inside \closing{} - cover.cls appends its own \\, and a
-% doubled break triggers "! LaTeX Error: There's no line here to end."
 \closing{Kind regards,}
 
-\signature{[YOUR_NAME]}
+\signature{Ankesh Singh}
 \end{flushright}
 \end{document}
 ```
@@ -133,48 +121,7 @@ The font wrapper is mandatory — if you just move `\begin{itemize}` outside `\l
 ### Length - Hard 1-Page Limit
 - Target: 1 page including signature block
 - Maximum: **never exceed 1 page**
-- **Word budget: 250-300 words** of body text (not counting LaTeX markup). This is the safe maximum. 350 words will overflow.
-- **Always count**: opening paragraph + bullet list paragraph + closing paragraph = 3 blocks. Add a 4th only if the others are short.
-- When adding company-specific content, trim other content to compensate rather than adding net length
-
-### Line Spacing
-- Add `\usepackage{setspace}` and `\setstretch{1.0}` if the letter is long and needs to fit on one page
-- Use `\vspace{.5cm}` between major sections for readability (only if space permits)
-
-### Bullet Lists
-- Place `\begin{itemize}...\end{itemize}` **outside** a `\lettercontent{}` block (see "Known template pitfall" above), wrapped in the matching Raleway-Medium `\fontspec` so the bullet font matches the body
-- 3-5 bullets is ideal
-- Start each bullet with bold label or action verb
-- Use `\textbf{Label:}` for category-style bullets
-- A bullet whose text begins with a literal `[` must be braced: `\item {[text]}`. Unbraced, LaTeX parses `[text]` as `\item`'s optional label and renders it off the left page edge, missing from the PDF text layer entirely
+- **Word budget: 250-300 words** of body text (not counting LaTeX markup).
 
 ### LaTeX Special Characters
-Escape these wherever they appear in body text:
-- Ampersand: `\&` (company names: Brüel \& Kjær, H\&M) - unescaped, the compile fails loudly
-- Percent: `\%` ("grew revenue 30\%") - unescaped, it does **not** fail: everything after the `%` on that line is silently eaten as a LaTeX comment
-- Dollar: `\$`, hash: `\#`, underscore: `\_`
-- Tilde: `\textasciitilde{}`, caret: `\textasciicircum{}`, backslash: `\textbackslash{}`
-
-### Non-English Cover Letters
-- Same template structure, just write content in the posting's language
-- Adjust date format to local convention
-- Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish)
-
-## Checklist Before Finalizing
-- [ ] No em-dashes (use commas or periods instead)
-- [ ] No cliches or empty filler
-- [ ] Every claim backed by specific example
-- [ ] Forward-looking framing: focuses on tasks you'll solve, not just past duties
-- [ ] Motivation section references this specific company's mission/values
-- [ ] Company name and role are correct throughout
-- [ ] Date is current
-- [ ] Fits on one page
-- [ ] Language matches the job posting language
-- [ ] Salutation is appropriate (named person if possible)
-- [ ] Headline is engaging and specific, not generic
-
-## Submission Guidelines (Best Practice)
-- Submit only the documents the employer requests
-- Export as PDF to preserve formatting
-- Name files clearly: "[Your Name] CV" and "[Your Name] Cover Letter"
-- Follow all employer instructions regarding anonymity or specific materials
+Escape `\&`, `\%`, `\$`, `\#`, `\_`, `\textasciitilde{}`, `\textasciicircum{}`.

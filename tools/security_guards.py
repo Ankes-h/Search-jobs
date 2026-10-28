@@ -156,6 +156,8 @@ REQUIRED_IGNORE_RULES = [
     "linkedin_Profile.pdf",
     "cv/main_*.*",
     "!cv/main_example.tex",
+    "!cv/main_example.md",
+    "!cv/main_example.docx",
     # ATS text extractions (/apply step 5d) carry the CV's full text.
     "cv/*.txt",
     "cover_letters/cover_*.*",
@@ -205,7 +207,11 @@ REQUIRED_IGNORE_RULES = [
 ALLOWED_IGNORE_NEGATIONS = {
     "!cover_letters/OpenFonts/fonts/**",
     "!cv/main_example.tex",
+    "!cv/main_example.md",
+    "!cv/main_example.docx",
     "!cover_letters/cover_example.tex",
+    "!cover_letters/cover_example.md",
+    "!cover_letters/cover_example.docx",
     "!documents/**/.gitkeep",
 }
 

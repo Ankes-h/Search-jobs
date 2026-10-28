@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Ankesh Singh
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. The AI acts as a career advisor and application assistant for Ankesh Singh, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,66 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
-
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Ankesh Singh
+- **Location:** Uttar Pradesh, India (Open to remote across India & on-site in major tech hubs)
+- **Email:** your.email@example.com
+- **Phone:** +91 XXXXXXXXXX
+- **LinkedIn:** https://www.linkedin.com/in/ankesh-singh-9898503a6/
+- **Medium / Blog:** https://medium.com/@ankeshs267
+- **ResearchGate:** https://www.researchgate.net/profile/Ankesh-Singh-8?ev=hdr_xprf
+- **MYBharat Profile:** https://www.mybharat.gov.in
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
-
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+  | Hindi | Native |
+  | English | Fluent / Professional working proficiency |
+- **CV language:** English
+- **Status:** Student / Undergraduate Researcher seeking Internships, Part-time, & Entry-level AI/ML roles
+- **Headline:** "B.Tech CSE (AI/ML) Undergraduate | Prompt Engineer | AI Developer | Tech Writer"
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
-
-### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **B.Tech in Computer Science and Engineering (Artificial Intelligence & Machine Learning)** (2025-2029) - Chitkara University, Patiala
+  - Focus: Machine Learning, Artificial Intelligence, Python, Prompt Engineering, Agentic AI, Data Structures & Algorithms
+- **Senior Secondary School (12th Grade, PCM)** (2024-2025) - Lucknow Public School
+  - Percentage: 77% (Physics, Chemistry, Mathematics)
+- **Secondary School (10th Grade)** (2022-2023) - Lucknow Public School
+  - Percentage: 92%
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** Prompt Engineering, Generative AI, AI/ML Fundamentals, Python, Agentic AI Workflows
+- **Secondary:** JavaScript, React, C, Java, HTML/CSS, Git, GitHub
+- **Domain:** Artificial Intelligence, Machine Learning, Cybersecurity Fundamentals, Technical Writing & Blogging
+- **Software & Tools:** Google Antigravity, VS Code, Linux/Bash, Canva/Graphic Design tools
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- **AI Fluency for Students** – Anthropic
+- **Apply AI: Analyze Customer Reviews** – Cisco (2026)
+- **AI for Beginners** – HP (2025)
+- **Fundamentals of Cybersecurity** – upGrad (2024)
 
-### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
-
-### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+### Publications & Writing
+- **Technical Articles & Insights** – Medium (https://medium.com/@ankeshs267): Articles analyzing AI developments, prompt engineering patterns, and practical AI applications.
+- **Academic & Technical Profile** – ResearchGate (https://www.researchgate.net/profile/Ankesh-Singh-8)
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+- **Driven & Self-Starter:** Proactive learner diving deeply into cutting-edge AI architectures, agentic coding tools, and modern software paradigms.
+- **Clear Communicator:** Strong verbal and written synthesis; skilled at breaking down complex AI and technical concepts into accessible technical articles.
+- **Analytical & Security-Conscious:** Mindful of prompt injection vectors, privacy, and cybersecurity fundamentals.
+- **Thrives in:** Dynamic, innovation-driven environments, AI research/engineering labs, open-source communities, and collaborative startup cultures.
+- **Growth areas:** Deepening production ML pipeline deployment and advanced algorithmic complexity.
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- Building and fine-tuning intelligent agentic systems, prompt chains, and generative AI applications.
+- Exploring state-of-the-art AI tooling (Antigravity, Claude Code, Gemini models) and sharing insights via technical writing.
 
-### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+### Target Sectors & Roles
+- **Roles:** AI/ML Intern, Prompt Engineering Intern, Junior AI Developer, Technical Content Writer, Generative AI Associate
+- **Sectors:** AI/ML Startups, Technology & Cloud Services, Developer Tools & Agentic Frameworks, EdTech, Research Labs
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Purely non-technical unpaid roles with no mentorship or learning path
+- Roles requiring long-term relocation outside India at this stage
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
@@ -100,7 +84,7 @@ automatically from your Languages table above - don't duplicate them here. -->
 4. **Verify both documents** (see Verification Checklist below)
 5. Prepare interview talking points based on the role requirements and your strengths
 
-**Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, explicitly reference **Claude Code** by name.
+**Important:** When mentioning agentic coding or AI tooling in CVs/cover letters, reference **Google Antigravity** and **Claude Code** as appropriate.
 
 ## Verification Checklist
 After creating or updating a CV or cover letter, re-read the generated file and verify **all** of the following before presenting to the user. Report the results as a pass/fail checklist.
@@ -126,22 +110,21 @@ After creating or updating a CV or cover letter, re-read the generated file and 
 ### Quality
 - [ ] No LaTeX syntax errors (balanced braces, correct commands)
 - [ ] No spelling or grammar errors
-- [ ] Agentic coding / AI tooling references mention **Claude Code** by name
 - [ ] Cover letter is addressed to the correct person (or "Dear Hiring Manager" if unknown)
 - [ ] Cover letter fits approximately one page
-- [ ] CV section headings (`\section{...}`) and the References boilerplate line match the CV's language, not left as the English template defaults (see `05-cv-templates.md`)
+- [ ] CV section headings (`\section{...}`) and the References boilerplate line match the CV's language, not left as the English template defaults
 
 ### Compiled PDF verification (MANDATORY - never skip)
-Both documents MUST be compiled and visually inspected via the Read tool on the PDF output. "Looks fine in the .tex" is not acceptable - LaTeX page-break decisions are unpredictable. Iterate until these all pass:
-- [ ] CV compiled with **lualatex** (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors). Cover letter compiled with **xelatex** (cover.cls requires fontspec). If a custom template is active (registered via `/add-template`), compile with its declared command instead — see the `ACTIVE-TEMPLATE` block in `05-cv-templates.md`/`06-cover-letter-templates.md`.
+Both documents MUST be compiled and visually inspected via the Read tool on the PDF output.
+- [ ] CV compiled with **lualatex**. Cover letter compiled with **xelatex**.
 - [ ] **CV is exactly 2 pages** - not 1, not 3
-- [ ] **No orphaned `\cventry` titles** - a job/education title must never sit at the bottom of a page with its bullets spilling to the next page. Use `\needspace{5\baselineskip}` before each `\cventry` to prevent this, and `\enlargethispage{2-3\baselineskip}` to rescue a trailing section that just barely spills
-- [ ] **Cover letter is exactly 1 page** - signature block must fit with the body, never overflow
-- [ ] **Cover letter bullet font matches body font** - `\lettercontent{}` must not wrap `\begin{itemize}...\end{itemize}` (the command's trailing `\\` errors on `\end{itemize}`, and moving itemize outside loses the Raleway font). Standard pattern: close `\lettercontent{}`, then wrap the list in `{\raggedright\fontspec[Path = OpenFonts/fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont \begin{itemize}...\end{itemize}\par}`
+- [ ] **No orphaned `\cventry` titles**
+- [ ] **Cover letter is exactly 1 page**
+- [ ] **Cover letter bullet font matches body font**
 
 ### ATS & keyword verification (CV)
-ATS parsers read the PDF's embedded text layer, not the rendered page. Extract it with `python3 tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt` (pypdf, then `pdftotext -layout -enc UTF-8`) and verify what a parser sees. If both extractors are missing, skip the parseability items with a warning and check keyword coverage from the visual PDF read instead.
-- [ ] CV text layer extracts cleanly - no `(cid:*)` markers, `�` replacement characters, or text visible in the PDF but absent from the extraction
-- [ ] Email and phone appear as **literal text** in the extraction (icon-glyph noise like `MOBILE-ALT`/`Envelope` is harmless, but a contact detail carried only by an icon or hyperlink is invisible to ATS)
-- [ ] Reading order of the extracted text matches the visual order (single-column stock template is safe; multi-column custom templates are where this breaks)
-- [ ] Posting keywords covered or honestly absent - synonym-only matches tightened to the posting's exact term where truthfully applicable, keywords the profile genuinely supports added to experience bullets, genuine gaps left visible and **never stuffed**
+Extract with `python tools/verify_pdf.py cv/main_<company>_<role>.pdf --dump-text cv/main_<company>_<role>.txt` and verify:
+- [ ] CV text layer extracts cleanly
+- [ ] Email and phone appear as **literal text** in the extraction
+- [ ] Reading order matches visual order
+- [ ] Posting keywords covered honestly, never stuffed

@@ -59,6 +59,18 @@ files ready    with fit ratings     (LaTeX, tailored)
 
 The framework encodes career guidance best practices, including structured evaluation criteria, forward-looking cover letter framing, and optional salary benchmarking.
 
+## 🌟 Search-Jobs: Google Antigravity & Multi-Format Highlights
+
+This repository (**Search-Jobs**) provides first-class support for **Google Antigravity**, multi-format exports, and high-throughput job search:
+- **Google Antigravity Integration**: Native Antigravity support via [`GEMINI.md`](GEMINI.md) and [`.agents/skills.json`](.agents/skills.json). Open the project in Antigravity or run with `agy .`.
+- **Cross-Repository Portability**: Modular skill design allows dropping or linking `Search-Jobs` into any other workspace or repository.
+- **Triple-Format Document Output**: Supports all three formats out-of-the-box for CVs and cover letters:
+  - **LaTeX (`.tex`)**: Classic publication-grade layout (`moderncv` banking style, `cover.cls`).
+  - **Markdown (`.md`)**: Human-readable, version-controllable, clean text for web forms.
+  - **Word (`.docx`)**: Corporate HR executive styling with custom margins, navy `#1A5276` headers, and ATS-optimized bullets.
+- **Batch Processing (10+ Jobs at Once)**: Scraping and ranking handle batches of at least 10 jobs at once (`/rank --top 10`).
+- **Multi-Format Exporter CLI**: `python tools/export_documents.py --examples` generates ready-to-use templates across all 3 formats.
+
 ## Prerequisites
 
 - [Claude Code](https://claude.com/claude-code) (CLI). Claude Code has no free tier: you need a Claude Pro/Max/Team subscription or Anthropic API credits (pay-per-token, usually cheaper for occasional use). Using a different agent tool (Codex, Antigravity, Gemini CLI)? Start at [`AGENTS.md`](AGENTS.md) - the portal search skills work there out of the box, and [community forks](https://github.com/ai-job-search-dev/ai-job-search/discussions/78) adapt the full workflow.
